@@ -9,6 +9,10 @@ plugins {
 group = "online.afeibaili"
 version = "0.1.0"
 
+dependencies {
+    testImplementation(kotlin("test"))
+}
+
 repositories {
     maven("https://maven.aliyun.com/repository/public")
     mavenCentral()

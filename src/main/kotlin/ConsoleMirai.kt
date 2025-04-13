@@ -2,7 +2,6 @@ package online.afeibaili
 
 import net.mamoe.mirai.console.plugin.jvm.JvmPluginDescription
 import net.mamoe.mirai.console.plugin.jvm.KotlinPlugin
-import net.mamoe.mirai.utils.info
 
 object ConsoleMirai : KotlinPlugin(
     JvmPluginDescription(
@@ -14,6 +13,7 @@ object ConsoleMirai : KotlinPlugin(
     }
 ) {
     override fun onEnable() {
-        logger.info { "Plugin loaded" }
+        logger.info("ConsoleMirai加载成功")
+        loadListener()
     }
 }
